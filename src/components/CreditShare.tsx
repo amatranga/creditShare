@@ -82,6 +82,6 @@ export default class CreditShare extends React.Component<any, any> {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
