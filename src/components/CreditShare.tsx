@@ -72,7 +72,6 @@ export default class CreditShare extends React.Component<any, any> {
           <div className="row justify-content-center">
             <MyCredentials
               myCredentials={this.state.ownCredentials}
-              sharedWithOthers={this.state.sharedWithOthers}
               onDelete={this.handleDelete}
               onShare={this.handleShare} />
           </div>

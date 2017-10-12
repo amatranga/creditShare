@@ -22,7 +22,6 @@ const Credentials = (props:any) => {
       </tr>
     );
   } else {
-    console.log(props, 'current props');
     return (
       <tr>
         <td>
