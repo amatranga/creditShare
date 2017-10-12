@@ -67,7 +67,7 @@ export default class CreditShare extends React.Component<any, any> {
   render() {
     return (
       <div>
-        <Navbar username={this.state.username} name={this.state.name} />
+        <Navbar userName={this.state.userName} name={this.state.name} />
         <div className="container">
           <div className="row justify-content-center">
             <MyCredentials
