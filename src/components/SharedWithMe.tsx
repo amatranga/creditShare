@@ -5,12 +5,8 @@ export default class SharedWithMe extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
     this.state = {
-      SharedWithMe: [this.props.SharedWithMe]
+      sharedWithMe: [this.props.sharedWithMe]
     }
-  }
-
-  componentWillMount() {
-    console.log(this.props, 'props in SharedWithMe');
   }
   render() {
     return (
