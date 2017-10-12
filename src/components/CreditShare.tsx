@@ -78,10 +78,11 @@ export default class CreditShare extends React.Component<any, any> {
           </div>
           <hr />
           <div className="row justify-content-center">
-            <SharedWithOthers sharedWithOthers={this.state.sharedWithOthers} />
+            <SharedWithOthers
+              sharedWithOthers={this.state.sharedWithOthers} />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
