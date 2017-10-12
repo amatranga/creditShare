@@ -5,11 +5,10 @@ export default class SharedWithOthers extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
     this.state = {
-      sharedWithOthers: [this.props.SharedWithOthers]
+      sharedWithOthers: [this.props.sharedWithOthers]
     }
   }
   render() {
-    console.log(this.state, 'state in SharedWithOthers');
     return (
       <span className="col">
         <h3>Shared With Others</h3>
@@ -22,7 +21,7 @@ export default class SharedWithOthers extends React.Component<any, any> {
             </tr>
           </thead>
           <tbody>
-            {this.state.sharedWithOthers.map((credential:any, idx:any) =>
+            {this.state.sharedWithOthers[0].map((credential:any, idx:any) =>
               <Credentials
                 key={idx}
                 id={idx}
