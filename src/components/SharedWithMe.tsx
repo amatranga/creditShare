@@ -8,6 +8,10 @@ export default class SharedWithMe extends React.Component<any, any> {
       SharedWithMe: [this.props.SharedWithMe]
     }
   }
+
+  componentWillMount() {
+    console.log(this.props, 'props in SharedWithMe');
+  }
   render() {
     return (
       <span className="col">
@@ -22,7 +26,10 @@ export default class SharedWithMe extends React.Component<any, any> {
           </thead>
           <tbody>
             {this.state.sharedWithMe[0].map((credential:any, idx:any) =>
-              <Credentials key={idx} id={idx} credential={credential} />
+              <Credentials
+                key={idx}
+                id={idx}
+                credential={credential} />
             )}  
           </tbody>
         </table>
