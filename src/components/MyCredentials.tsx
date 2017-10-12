@@ -5,12 +5,8 @@ export default class MyCredentials extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
     this.state = {
-      myCredentials: [this.props.myCredentials],
-      sharedWithOthers: [this.props.sharedWithOthers]
+      myCredentials: [this.props.myCredentials]
     }
-  }
-  componentWillMount() {
-    console.log(this.props, 'props in MyCredentials');
   }
   render() {
     return (
